@@ -1,0 +1,105 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  background: url("/images/bg-pattern-top.svg") -200px -200px no-repeat,
+    url("/images/bg-pattern-bottom.svg") right  -200px bottom -200px no-repeat;
+  /* background-position: initial, right; */
+  background-size: 400px, 400px;
+
+  font-family: "Kumbh Sans";
+  background-color: hsl(185, 75%, 39%);
+  font-size: 18px;
+}
+
+.attribution {
+  font-size: 18px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.wrapper {
+  padding: 20px;
+}
+.card {
+  /* display: none; */
+  background-color: white;
+  /* width: 300px; */
+  height: fit-content;
+  margin: auto;
+  color: black;
+  margin-top: 33%;
+  text-align: center;
+  border-radius: 20px;
+  font-weight: 700;
+}
+.top-bg {
+  background-image: url("/images/bg-pattern-card.svg");
+  height: 150px;
+  border-radius: 20px 20px 0px 0px;
+  vertical-align: middle;
+}
+.card img {
+  height: 150px;
+  border: 5px solid white;
+  border-radius: 50%;
+
+  margin-top: -50px;
+}
+.card .num,
+.city {
+  color: hsl(0, 0%, 59%);
+  font-size: 18px;
+}
+.text {
+  padding: 20px;
+}
+hr {
+  opacity: 0.25;
+  background-color: currentColor;
+  height: 1px;
+  margin: 1rem;
+}
+.actions {
+  display: flex;
+  justify-content: space-between;
+}
+.action .follower,
+.likes,
+.photos {
+  font-weight: 700;
+}
+.actions .lt {
+  color: hsl(0, 0%, 59%);
+  font-weight: 400;
+  font-size: 16[x];
+}
+
+footer {
+  padding: 20px;
+}
+@media only screen and (min-width: 40em) {
+  body {
+    background: url("/images/bg-pattern-top.svg") -600px -600px no-repeat,
+      url("/images/bg-pattern-bottom.svg") 400px 300px no-repeat;
+    background-color: hsl(185, 75%, 39%);
+  }
+  .card {
+    width: 500px;
+    margin-top: 12% 
+   }
+}
+@media only screen and (min-width: 60em) {
+  body {
+    background: url("/images/bg-pattern-top.svg") -300px -600px no-repeat,
+      url("/images/bg-pattern-bottom.svg") 600px 300px no-repeat;
+    background-size: 1000px, 1000px;
+    background-color: hsl(185, 75%, 39%);
+  }
+  .card {
+    width: 500px;
+  }
+}
